@@ -10,16 +10,17 @@
 
 
 **4. What are your data sources?**
+Opioid Overdose Deaths from the CDC website. 'Medicare Provider Utilization and Payment Data: Part D Prescriber' dataset  from the Center for Medicare and Medicaid Services (CMS) website. 'Opioid overdose deaths by type of opioid' dataset Opioid EMS calls dataset from catalog.data.gov website. Per-capita opioid prescription data by county dataset from CDC website. 
 
 
 **5. What’s your next step towards making this your project.**
 
 
 
-## Proposal 2 - 
+## Proposal 2 - Predicting weather from people's music choices
 
 **1. High level description of project.**
-
+Instead of building a music recommendation engine, I will be trying the opposite of sorts - trying to gather patterns in people's music listening habits and correlate it with weather data. If successful, I should be able to predict the weather based on meta-data from 
 
 **2. What question or problem are you trying to solve?**
 
@@ -28,6 +29,8 @@
 
 
 **4. What are your data sources?**
+MusicBrainz dataset which collects music listening histories of it's users. AcousticBrainz databaseof the acoustic characteristics of music and includes low-level spectral information and information for genres, moods, keys, and scales
+NOAA’s Global Historical Climatology Network database 
 
 
 **5. What’s your next step towards making this your project.**
