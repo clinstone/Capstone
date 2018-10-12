@@ -27,7 +27,7 @@ Currently I only have access to Medicare prescriber data. I am looking for sourc
 Instead of building a music recommendation engine, I will be trying the opposite of sorts - trying to gather patterns in people's music listening habits and correlate it with weather data. If successful, I should be able to predict the weather based on meta-data from music currently being played across the United States. 
 
 **2. What question or problem are you trying to solve?**
-I am trying to study if there is a connection between the weather and the music being consumed in the United States. 
+I am trying to study if there is a connection between the weather and the music being consumed in the United States. If successful, this could help the tuning of music recommendation engines by factoring in the current weather. Futher along the line, I could see this being useful for spontanous creation of ambient music tailored to the user's music preferences and the current weather (I fully acknowledge this is a *way-way* down the line idea).  
 
 **3. How will you present your work?**
 * Ideally: with a map visualization of the United States that shows changes in music choices by genre or mood overtime, and an overlay of weather patters. 
