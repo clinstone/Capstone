@@ -42,9 +42,7 @@ I will be using transportation datasets from Chicago to predict the ideal times 
 Freelance Uber/Lyft drivers are presented with the 
 
 **3. How will you present your work?**
-
 Ideally: A visualization in the form of a map of the city where the driver can input his/her desired shift length or the desired times of the day they would like to work. , The map will then let them know the ideal locations to work, based on the time of day or the ideal time slots to work, based on location. 
-
 Backup plan: Powerpoint slides. 
 
 **4. What are your data sources?**
