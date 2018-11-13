@@ -43,3 +43,11 @@ between 2001 and 2012.
   * Understanding the data?
   * Building a minimum viable product?
   * Gauging how much signal might be in the data?
+  
+  I already have downloaded all my data. The next step is for me to finalize how I am going to analyze the data: 
+  * Spin up an AWS EC2 and use Postgres (the method suggested by MIT, the providers of the database). 
+  * Spin up an AWS EMR and use Spark. 
+  * Use Amazon Redshift. 
+  * Use Dask (not very familiar with this, but links like [this](http://docs.dask.org/en/latest/spark.html) and [this](https://matthewrocklin.com/blog//work/2018/08/28/dataframe-performance-high-level) are promising. 
+  
+  I am going to be conducting research into the feasibity and cost effectiveness of each method. 
