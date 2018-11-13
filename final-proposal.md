@@ -1,7 +1,12 @@
 1. What are you trying to do?  Articulate your objectives using absolutely no jargon (i.e. as if
 you were explaining to a salesperson, executive, or recruiter).
 
-In hospitals, the intensive care unit (ICU) admits severely ill patients in order to provide life saving treatment. One of the most important outcomes measured in ICUs are mortality rates (death rates). Doctors use scoring systems in order to predict a patient's mortality risk during their ICU stay. There have been several different scoring systems developed
+In hospitals, the intensive care unit (ICU) admits severely ill patients in order to provide life saving treatment. One of the most important outcomes measured in ICUs are mortality rates (death rates). Doctors use [scoring systems](https://en.wikipedia.org/wiki/Medical_Scoring_Systems) in order to predict a patient's mortality risk during their ICU stay. 
+
+There have been several different scoring systems developed and in use including: 
+  * [The Oxford Acute Severity of Illness Score (OASIS)](https://www.ncbi.nlm.nih.gov/pubmed/23660729)
+  * [Simplified Acute Physiology Score II (SAPS II)](https://en.wikipedia.org/wiki/SAPS_II)
+  * [Sequential Organ Failure Assessment (SOFA) score](https://en.wikipedia.org/wiki/SOFA_score) 
 
 
 2. How has this problem been solved before? If you feel like you are addressing a novel
