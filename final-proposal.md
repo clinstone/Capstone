@@ -10,13 +10,21 @@ There have been several different scoring systems developed and in use including
   * [Simplified Acute Physiology Score II (SAPS II)](https://en.wikipedia.org/wiki/SAPS_II)
   * [Sequential Organ Failure Assessment (SOFA) score](https://en.wikipedia.org/wiki/SOFA_score) 
 
-My capstone will evalute the ability of each of these 3 different scoring systems ability to predict patient mortality. I will be using 
+My capstone will evalute the ability of each of these 3 different scoring systems ability to predict patient mortality. I will be also be attempting to combine the 3 scoring systems into one 'super scorer' and test it's predicitve ability. 
 
 
 **2. How has this problem been solved before? If you feel like you are addressing a novel
 issue, what similar problems have been solved, and how are you borrowing from those?**
+Past studies have tested the predictive power of individual scoring systems. The studies also used the whole adult population as one, irregardless of clinical diagnoses. 
 
 **3. What is new about your approach, why do you think it will be successful?**
+I plan on combining all three scoring systems and using all their individual variables/features to predict mortality. I will also be using various machine learning algorithims such as: 
+  * Logistic Regression (LR),
+  * Logistic regression with an L1 regularization penalty using the Least Absolute Shrinkage and Selection Operator
+(LASSO), 
+  * Logistic regression with an L2 regularization penalty (L2), and
+  * Gradient Boosting Decision Trees (GB).
+
 
 **4. Who cares?  If you're successful, what will the impact be?**
 
