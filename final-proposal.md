@@ -45,7 +45,7 @@ The main way I will present my work is through a Powerpoint presentation, with s
 
 **6. What are your data sources? What is the size of your dataset, and what is your storage format?**
 
-The MIMIC-III (Medical Information Mart for Intensive Care) Clinical Database developed by the MIT Lab for Computational Physiology. It is a large collection of de-identified electronic medical records for over 40,00 patients admitted to the Beth Israel Deaconess Medical Center in Boston, MA, USA between 2001 and 2012. The database consists of 26 comma-separated-value (CSV) files. The total size of the uncompressed files is 47GB. All tables combined there are 534 columns and 728,556,685 rows. 
+The [MIMIC-III (Medical Information Mart for Intensive Care) Clinical Database](https://mimic.physionet.org/) developed by the MIT Lab for Computational Physiology. It is a large collection of de-identified electronic medical records for over 40,00 patients admitted to the Beth Israel Deaconess Medical Center in Boston, MA, USA between 2001 and 2012. The database consists of 26 comma-separated-value (CSV) files. The total size of the uncompressed files is 47GB. All tables combined there are 534 columns and 728,556,685 rows. 
 
 
 **7. What are potential problems with your capstone, and what have you done to mitigate these problems?**
