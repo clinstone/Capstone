@@ -1,3 +1,5 @@
+## Final Proposal
+
 1. What are you trying to do?  Articulate your objectives using absolutely no jargon (i.e. as if
 you were explaining to a salesperson, executive, or recruiter).
 
@@ -8,7 +10,7 @@ There have been several different scoring systems developed and in use including
   * [Simplified Acute Physiology Score II (SAPS II)](https://en.wikipedia.org/wiki/SAPS_II)
   * [Sequential Organ Failure Assessment (SOFA) score](https://en.wikipedia.org/wiki/SOFA_score) 
 
-
+My capstone will evalute the predicitve 
 2. How has this problem been solved before? If you feel like you are addressing a novel
 issue, what similar problems have been solved, and how are you borrowing from those?
 
