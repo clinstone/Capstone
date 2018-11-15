@@ -10,7 +10,7 @@ There have been several different scoring systems developed and in use including
   * [Simplified Acute Physiology Score II (SAPS II)](https://en.wikipedia.org/wiki/SAPS_II)
   * [Sequential Organ Failure Assessment (SOFA) score](https://en.wikipedia.org/wiki/SOFA_score) 
 
-My capstone will evalute the ability of each of these 3 different scoring systems ability to predict patient mortality. I will be also be attempting to combine the 3 scoring systems into one 'super scorer' and test it's predicitve ability. 
+My capstone will evalute each of these 3 different scoring systems ability to predict patient mortality. I will be also be attempting to combine the 3 scoring systems into one 'super scorer' and test it's predicitve ability. 
 
 
 **2. How has this problem been solved before? If you feel like you are addressing a novel
