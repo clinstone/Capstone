@@ -1,0 +1,48 @@
+
+
+
+
+
+
+make mimic datadir=/home/clintone/MIMICdemo/
+
+createuser -P -s -e -d clintone
+
+psql -U clintone -d postgres
+
+CREATE DATABASE mimic OWNER clintone;
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f postgres_create_tables_pg10.sql
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f postgres_load_data.sql -v mimic_data_dir=/home/clintone/MIMICdemo/
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f postgres_add_indexes.sql
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f postgres_checks.sql
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii'
+
+grant select on all tables in schsema mimiciii to clintone;
+grant usage on schema mimiciii to clintone;
+grant connect on database mimic to clintone;
+
+# CREATE MATERIALIZED VIEW FOR OASIS SCORE
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f urine-output-first-day.sql
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f ventilation-first-day.sql
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f vitals-first-day.sql
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f gcs-first-day.sql
+
+
+psql 'dbname=mimic user=clintone options=--search_path=mimiciii' -f make-concepts.sql
+
+COPY (SELECT * FROM oasis) TO '/home/clintone/MIMICmaterialized/oasis.csv' DELIMITER ',' CSV HEADER;
+COPY (SELECT * FROM apsiii) TO '/home/clintone/MIMICmaterialized/apsiii.csv' DELIMITER ',' CSV HEADER;
+COPY (SELECT * FROM sapsii) TO '/home/clintone/MIMICmaterialized/sapsii.csv' DELIMITER ',' CSV HEADER;
+
+
+
+# TO ALLOW POSTGRES TO WRITE TO FILE
+sudo chown postgres /home/clintone/MIMICmaterialized/
+
+
