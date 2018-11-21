@@ -1,7 +1,8 @@
 
 
 
-
+export datadir="/home/ubuntu/MIMICdata"
+nohup make mimic-download physionetuser=clintalphonso@gmail.com datadir=$datadir & 
 
 
 make mimic datadir=/home/clintone/MIMICdemo/
@@ -44,5 +45,24 @@ COPY (SELECT * FROM sapsii) TO '/home/clintone/MIMICmaterialized/sapsii.csv' DEL
 
 # TO ALLOW POSTGRES TO WRITE TO FILE
 sudo chown postgres /home/clintone/MIMICmaterialized/
+
+sudo chown postgres /home/ubuntu
+
+
+psql 'dbname=mimic user=mimicuser password= options=--search_path=mimiciii'
+
+psql -U mimicuser -d mimic -h localhost -f make-severity-scores.sql
+
+SET search_path TO mimiciii;
+
+psql 'dbname=mimic user=mimicuser host=localhost options=--search_path=mimiciii' -f make-severity-scores.sql
+
+psql 'dbname=mimic user=mimicuser host=localhost options=--search_path=mimiciii' -f urine-output-first-day.sql
+grant select on all tables in schema mimiciii to mimicuser;
+grant usage on schema mimiciii to mimicuser;
+grant connect on database mimic to mimicuser;
+
+createuser -P -s -e -d
+
 
 
