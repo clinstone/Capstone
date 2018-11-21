@@ -27,17 +27,19 @@ psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii' -f postgres_load_
 nohup psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii' -f postgres_load_data.sql -v mimic_data_dir=/home/ubuntu/MIMICdata/ > myprogram.out 2>myprogram.err &
 
 
+nohup psql 'dbname=mimic1 user=ubuntu options=--search_path=mimiciii' -f postgres_add_indexes.sql > index2.out 2>index2.err &
+
 psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii' -f postgres_add_indexes.sql
 
-psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii' -f postgres_checks.sql
+psql 'dbname=mimic1 user=ubuntu options=--search_path=mimiciii' -f postgres_checks.sql
 
-psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii'
+psql 'dbname=mimic1 user=ubuntu options=--search_path=mimiciii'
 
 grant select on all tables in schema mimiciii to ubuntu;
 grant usage on schema mimiciii to ubuntu;
-grant connect on database mimic to ubuntu;
+grant connect on database mimic1 to ubuntu;
 
-psql 'dbname=mimic user=ubuntu options=--search_path=mimiciii' -f make-concepts.sql
+nohup psql 'dbname=mimic1 user=ubuntu options=--search_path=mimiciii' -f make-concepts.sql > concepts.out 2>concepts.err &
 
 sudo mkdir /home/ubuntu/MIMICmaterialized/
 
@@ -47,7 +49,13 @@ COPY (SELECT * FROM oasis) TO '/home/ubuntu/MIMICmaterialized/oasis.csv' DELIMIT
 COPY (SELECT * FROM apsiii) TO '/home/ubuntu/MIMICmaterialized/apsiii.csv' DELIMITER ',' CSV HEADER;
 COPY (SELECT * FROM sapsii) TO '/home/ubuntu/MIMICmaterialized/sapsii.csv' DELIMITER ',' CSV HEADER;
 
-scp -i "SparkAWS.pem" ubuntu@ec2-34-220-52-84.us-west-2.compute.amazonaws.com/home/ubuntu/MIMICmaterialized/oasis.csv /home/clintone/MaterializedCSV/oasis.csv
+sudo growpart /dev/nvme0n1 1
+
+sudo resize2fs /dev/nvme0n1p1
+
+tail -n 100 index2.out
+
+tail -n 100 index2.err
 
 
 
