@@ -47,7 +47,11 @@ sudo chown postgres /home/ubuntu/MIMICmaterialized/
 
 COPY (SELECT * FROM oasis) TO '/home/ubuntu/MIMICmaterialized/oasis.csv' DELIMITER ',' CSV HEADER;
 COPY (SELECT * FROM apsiii) TO '/home/ubuntu/MIMICmaterialized/apsiii.csv' DELIMITER ',' CSV HEADER;
+COPY (SELECT * FROM saps) TO '/home/ubuntu/MIMICmaterialized/saps.csv' DELIMITER ',' CSV HEADER;
+
+COPY (SELECT * FROM qsofa) TO '/home/ubuntu/MIMICmaterialized/qsofa.csv' DELIMITER ',' CSV HEADER;
 COPY (SELECT * FROM sapsii) TO '/home/ubuntu/MIMICmaterialized/sapsii.csv' DELIMITER ',' CSV HEADER;
+COPY (SELECT * FROM sirs) TO '/home/ubuntu/MIMICmaterialized/sirs.csv' DELIMITER ',' CSV HEADER;
 
 sudo growpart /dev/nvme0n1 1
 
