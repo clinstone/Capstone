@@ -12,6 +12,7 @@ def clean_up(filename):
 	df_adult = df.loc[df['icustay_age_group'] == 'adult']
 
 	# DECIDE ABOUT DROPPING NULL VALUES AND INSERT HERE
+	df_adult_dropped = df_adult.dropna().copy()
 
 	# create dataframe based on raw values
 	df_raw = df_adult[['subject_id', 'hadm_id', 'icustay_id', 'age', 'preiculos', 'gcs', 'heartrate', 'meanbp', \
@@ -33,7 +34,7 @@ def clean_up(filename):
                                                     random_state=0,
                                                    stratify=y)
 	# Train and fit model                                                   
-	rf = RandomForestClassifier(random_state=0,n_jobs=-1)
+	rf = RandomForestClassifier(n_estimators = 300, random_state=0,n_jobs=-1)
 
 	rf.fit(X_train, y_train)
 		                     
@@ -49,6 +50,14 @@ def clean_up(filename):
 
 	# Get AUROC score
 	roc_auc_score(y_test, y_proba)
+
+	# Create dataframe with icustay_id and icustay_expire_flag	
+	df_flag = df[['icustay_id', 'icustay_age_group','icustay_expire_flag']].copy()	
+
+	# Merge two dataframes on icustay_id	
+	lods_merged = lods.merge(df_flag, on='icustay_id')
+
+	
 
 
 
