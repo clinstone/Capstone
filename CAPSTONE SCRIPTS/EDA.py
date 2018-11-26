@@ -51,6 +51,18 @@ def clean_up(filename):
 	# Get AUROC score
 	roc_auc_score(y_test, y_proba)
 
+	# Calculate Standard Mortality Rate (SMR) 
+	SMR = sum(y_test)/sum(pred)
+	print('SMR: {:.3}'.format(SMR)))
+	# (different way) print('SMR: {:.3}'.format(sum(y_test)/sum(pred)))
+
+	# Calculate Brier score
+	difference = y_proba - y_test
+	squared = np.square(difference)
+	Brier = np.mean(squared)
+	print('Brier Score: {:.3}'.format(Brier)))
+	# (different way) print('Brier Score: {:.3}'.format(np.mean(np.square(y_proba - y_test))))
+
 	# Create dataframe with icustay_id and icustay_expire_flag	
 	df_flag = df[['icustay_id', 'icustay_age_group','icustay_expire_flag']].copy()	
 

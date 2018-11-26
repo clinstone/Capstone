@@ -8,12 +8,15 @@ Best (per performance) number of trees = 300
 OASIS
 Accuracy score: 0.914
 AUROC score = 0.802
+SMR: 1.92
+Brier Score: 0.0692
 
 
 LODS (n = 45255)
 Accuracy score: 0.922
 AUC score: 0.793
-
+SMR: 4.009
+Brier: 0.0644
 
 
 
