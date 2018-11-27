@@ -23,14 +23,18 @@ def clean_up(model):
 		 'resprate', 'temp', 'urineoutput', 'mechvent','electivesurgery', 'hospital_expire_flag']].copy()
 
 	# create dataframe based on computed scores
-	df_scores_hos = df_adult[['subject_id', 'hadm_id', 'icustay_id', 'age_score', 'preiculos_score', 'gcs_score', 'heartrate_score', 'meanbp_score', \
-		 'resprate_score', 'temp_score', 'urineoutput_score', 'mechvent_score','electivesurgery_score', 'hospital_expire_flag']].copy()
+	df_scores = df_adult_dropped[['oasis_prob','icustay_id', 'age_score', 'preiculos_score', 'gcs_score', 'heartrate_score', \
+                              'meanbp_score', 'resprate_score', 'temp_score','urineoutput_score', \
+                              'mechvent_score','electivesurgery_score', 'icustay_expire_flag']].copy()
 
 	# create target variable
-	y_name = df_scores_hos.pop('hospital_expire_flag')
+	y = df_scores['icustay_expire_flag'].copy()
 
 	# create X variable
-	X_name = df_scores_hos.copy()
+	
+	X = df_scores[['age_score', 'preiculos_score', 'gcs_score', 'heartrate_score', \
+                              'meanbp_score', 'resprate_score', 'temp_score','urineoutput_score', \
+                              'mechvent_score','electivesurgery_score']].copy()
 
 	# train-test split	
 	X_train, X_test, y_train, y_test = train_test_split(X, y, 
@@ -97,6 +101,8 @@ def clean_up(model):
 	plt.xlabel('False Positive Rate')
 	plt.show()
 
+	# To get industry standard	
+	y_ind_prob = df_scores.loc[X_test.index]
 	
 
 

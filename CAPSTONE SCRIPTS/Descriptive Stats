@@ -18,6 +18,25 @@ AUC score: 0.793
 SMR: 4.009
 Brier: 0.0644
 
+SIRS 
+Accuracy score: 0.917
+AUROC: 0.656
+SMR: inf
+Brier Score: 0.0744
+
+SAPS
+SAPS
+Accuracy score: 0.922
+AUROC: 0.818
+SMR: 2.86
+Brier Score: 0.0634
+
+SAPS and LODS
+Accuracy score: 0.924
+AUROC: 0.844
+SMR: 3.19
+Brier Score: 0.0608
+
 
 
 
