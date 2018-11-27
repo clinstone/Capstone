@@ -3,10 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
 
-def clean_up(filename):
+model = ['a', 'b', 'c']
+
+for name in model:
+
+def clean_up(model):
     
 	# import dataframe
-	df = pd.read_csv(filename)
+	df_name = pd.read_csv(filename)
 
 	# keep only adult cases
 	df_adult = df.loc[df['icustay_age_group'] == 'adult']
@@ -23,10 +27,10 @@ def clean_up(filename):
 		 'resprate_score', 'temp_score', 'urineoutput_score', 'mechvent_score','electivesurgery_score', 'hospital_expire_flag']].copy()
 
 	# create target variable
-	y = df_scores_hos.pop('hospital_expire_flag')
+	y_name = df_scores_hos.pop('hospital_expire_flag')
 
 	# create X variable
-	X = df_scores_hos.copy()
+	X_name = df_scores_hos.copy()
 
 	# train-test split	
 	X_train, X_test, y_train, y_test = train_test_split(X, y, 
@@ -68,6 +72,30 @@ def clean_up(filename):
 
 	# Merge two dataframes on icustay_id	
 	lods_merged = lods.merge(df_flag, on='icustay_id')
+
+	# calculate the fpr and tpr for all thresholds of the classification
+	# probs = model.predict_proba(X_test)
+	# preds = probs[:,1]
+	fpr, tpr, threshold = roc_curve(y_test, y_proba)
+	roc_auc = auc(fpr, tpr)
+	fpr_LODS, tpr_LODS, threshold = roc_curve(y_test_LODS, y_proba_LODS)
+	roc_auc_LODS = auc(fpr_LODS, tpr_LODS)
+
+	# Plot ROC curves
+	
+	plt.title('Receiver Operating Characteristic')
+	
+	plt.plot(fpr, tpr, 'b', label = 'AUC_OASIS = %0.3f' % roc_auc)
+	plt.plot(fpr_LODS, tpr_LODS, 'g', label = 'AUC_LODS = %0.3f' % roc_auc_LODS)
+	
+
+	plt.legend(loc = 'lower right')
+	plt.plot([0, 1], [0, 1],'r--')
+	plt.xlim([0, 1])
+	plt.ylim([0, 1])
+	plt.ylabel('True Positive Rate')
+	plt.xlabel('False Positive Rate')
+	plt.show()
 
 	
 
