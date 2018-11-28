@@ -37,6 +37,65 @@ AUROC: 0.844
 SMR: 3.19
 Brier Score: 0.0608
 
+OASIS - raw scores 
+Accuracy score: 0.927
+AUROC: 0.856
+SMR: 3.4
+Brier Score: 0.0578
+Brier Score [IND]: 0.0681
+
+OASIS - raw scores, max depth of - 10
+Accuracy score: 0.928
+AUROC: 0.862
+SMR: 4.48
+Brier Score: 0.0575
+Brier Score [IND]: 0.0681
+
+20
+Accuracy score: 0.927
+AUROC: 0.857
+SMR: 3.44
+Brier Score: 0.0577
+Brier Score [IND]: 0.0681
+
+40
+Accuracy score: 0.927
+AUROC: 0.856
+SMR: 3.4
+Brier Score: 0.0578
+Brier Score [IND]: 0.0681
+
+
+
+Oasis max depth of - 10
+Accuracy score: 0.926
+AUROC: 0.857
+SMR: 4.06
+Brier Score: 0.0587
+Brier Score [IND]: 0.0681
+
+Oasis max depth of -11
+Accuracy score: 0.926
+AUROC: 0.857
+SMR: 3.87
+Brier Score: 0.0588
+Brier Score [IND]: 0.0681
+
+Gradient Boosted Trees Oasis Scores
+
+Accuracy score: 0.926
+AUROC: 0.863
+SMR: 3.43
+Brier Score: 0.0581
+Brier Score [IND]: 0.0681
+
+Gradient Boosted Trees Oasis Raw
+Accuracy score: 0.927
+AUROC: 0.865
+SMR: 3.22
+Brier Score: 0.0572
+Brier Score [IND]: 0.0681
+
 
 
 
