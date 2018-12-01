@@ -218,6 +218,11 @@ SMR: 3.08
 Brier Score: 0.0553
 Brier Score [IND]: 0.0666
 
+Accuracy score: 0.929
+AUROC: 0.865
+SMR: 2.72
+Brier Score: 0.0562
+
 
 
 
