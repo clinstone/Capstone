@@ -200,6 +200,26 @@ SMR: 2.71
 Brier Score: 0.0569
 
 
+================================================================================================
+After cleanup
+================================================================================================
+Random forest OASIS RAW (with/o age 300) 
+Accuracy score: 0.93
+AUROC: 0.849
+SMR: 3.45
+Brier Score: 0.0564
+Brier Score [IND]: 0.0666
+
+
+Gradient Boosted Trees Oasis Raw (with/0 age 300) 
+Accuracy score: 0.932
+AUROC: 0.86
+SMR: 3.08
+Brier Score: 0.0553
+Brier Score [IND]: 0.0666
+
+
+
 
 
 
