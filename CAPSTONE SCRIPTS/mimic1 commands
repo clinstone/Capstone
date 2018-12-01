@@ -61,7 +61,7 @@ tail -n 100 index2.out
 
 tail -n 100 index2.err
 
-ssh -i "SparkAWS.pem" -NL 8889:localhost:8889 ubuntu@ec2-54-188-222-79.us-west-2.compute.amazonaws.com
+ssh -i "SparkAWS.pem" -NL 8889:localhost:8889 ubuntu@ec2-34-221-153-83.us-west-2.compute.amazonaws.com
 
 
 

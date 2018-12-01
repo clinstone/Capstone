@@ -96,6 +96,116 @@ SMR: 3.22
 Brier Score: 0.0572
 Brier Score [IND]: 0.0681
 
+Tuned Gradient Boosted Trees Scores
+Params: random_state=0, learning_rate= 0.01, \
+                                max_features='sqrt', max_leaf_nodes=9, 
+                                n_estimators=1900
+Accuracy score: 0.926
+AUROC: 0.864
+SMR: 3.26
+Brier Score: 0.0578
+Brier Score [SKLEARN]: 0.0578
+Brier Score [IND]: 0.0681
+
+====================================================================
+Untuned SAPS Score (w/o SAPS score) 
+SAPS
+Accuracy score: 0.926
+AUROC: 0.851
+SMR: 3.21
+Brier Score: 0.0582
+
+Untuned SAPS Score & LODS (w/o SAPS score or LODS score) 
+Accuracy score: 0.926
+AUROC: 0.864
+SMR: 2.88
+Brier Score: 0.0579
+
+
+Untuned SAPS Score & LODS (w/o SAPS score or LODS score) AND RAW OASIS SCORES
+Accuracy score: 0.927
+AUROC: 0.875
+SMR: 2.71
+Brier Score: 0.057
+
+Untuned SAPS Score & LODS (w/o SAPS score or LODS score) AND OASIS SCORES
+Accuracy score: 0.927
+AUROC: 0.876
+SMR: 2.68
+Brier Score: 0.0569
+
+Untuned SAPS Score & LODS (WITH SAPS/LODS/OASIS scores) AND OASIS SCORES
+Accuracy score: 0.927
+AUROC: 0.872
+SMR: 2.74
+Brier Score: 0.057
+
+Untuned SAPS Scores AND OASIS SCORES (w/o SAPS score or LODS score)
+Accuracy score: 0.926
+AUROC: 0.87
+SMR: 2.88
+Brier Score: 0.0578
+
+Untuned SAPS Scores AND OASIS SCORES (with LODS score)
+Accuracy score: 0.925
+AUROC: 0.872
+SMR: 2.78
+Brier Score: 0.0574
+
+
+Untuned SAPS Scores AND OASIS RAW (WITH LODS score)
+Accuracy score: 0.927
+AUROC: 0.871
+SMR: 2.66
+Brier Score: 0.0575
+
+
+Untuned OASIS RAW (with all 3 scores) 
+Accuracy score: 0.926
+AUROC: 0.867
+SMR: 2.82
+Brier Score: 0.058
+
+Untuned OASIS RAW (LODS, SAPS scores) 
+Accuracy score: 0.925
+AUROC: 0.868
+SMR: 2.86
+Brier Score: 0.0582
+
+
+
+Untuned OASIS SCORES (with LODS,SAPS scores) 
+Accuracy score: 0.925
+AUROC: 0.867
+SMR: 2.98
+Brier Score: 0.0584
+
+Untuned just ALL 3 SCORES
+Accuracy score: 0.922
+AUROC: 0.85
+SMR: 3.78
+Brier Score: 0.0612
+
+Untunes all 3 scores AND LODS, SAPS, OASIS SCORES AND RAW (KITCHEN SINK)
+Accuracy score: 0.926
+AUROC: 0.873
+SMR: 2.71
+Brier Score: 0.0571
+
+Untunes  LODS, SAPS, OASIS SCORES AND RAW (KITCHEN SINK w/o cumul. scores)
+
+Accuracy score: 0.927
+AUROC: 0.877
+SMR: 2.71
+Brier Score: 0.0569
+
+
+
+
+
+
+
+
 
 
 
