@@ -1,5 +1,9 @@
 # Welcome to my Capstone Project! 
 
+Please check out a 4 minute video to get a quick overview of my project. 
+
+[![Please click here](https://img.youtube.com/vi/W07OEYwsi5Y/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Link to video on YouTube")
+
 ## Introduction 
 In hospitals, the intensive care unit (ICU) admits severely ill patients in order to provide life saving treatment. One of the most important outcomes measured in ICUs are mortality rates (death rates). Doctors use [scoring systems](https://en.wikipedia.org/wiki/Medical_Scoring_Systems) in order to predict a patient's mortality risk during their ICU stay. 
 
