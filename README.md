@@ -1,6 +1,6 @@
 # Welcome to my Capstone Project! 
 
-Please check out a 4 minute video to get a quick overview of my project. 
+Please check out a 4 minute video to get a quick overview of my project (clicking link will redirect to video on YouTube). 
 
 [![Please click here](https://img.youtube.com/vi/W07OEYwsi5Y/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Link to video on YouTube")
 
