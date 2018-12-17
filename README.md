@@ -27,8 +27,13 @@ The [MIMIC-III (Medical Information Mart for Intensive Care) Clinical Database](
 
 ## Oxford Acute Severity of Illness Score (OASIS)
 
-The Oxford Acute Severity of Illness Score (OASIS) is a parsimonious severity score developed using a hybrid genetic algorithm and particle swarm optimization approach which allowed direct optimization of a severity score in a clinically relevant form with simultaneous multivariate feature selection (Johnson, 2013). 
+The Oxford Acute Severity of Illness Score (OASIS) is a parsimonious severity score developed using a hybrid genetic algorithm and particle swarm optimization approach which allowed direct optimization of a severity score in a clinically relevant form with simultaneous multivariate feature selection (Johnson, 2013). The score is calculated using 10 variables (see below). Each variable is given a sub-score based on patient data upto 24 hours after admission to the ICU. 
 
-[[https://github.com/clinstone/Capstone/blob/master/CAPSTONE%20SCRIPTS/OasisPictures/OasisVariables.png|alt=OASIS-sub-scores]]
+![OASIS-sub-scores](https://github.com/clinstone/Capstone/blob/master/CAPSTONE%20SCRIPTS/OasisPictures/OasisVariables.png)
+
+[Source](http://alistairewj.github.io/project/oasis/)
+
+References:
+Johnson, Alistair EW, Andrew A. Kramer, and Gari D. Clifford. "A new severity of illness scale using a subset of acute physiology and chronic health evaluation data elements shows comparable predictive accuracy*." Critical care medicine 41, no. 7 (2013): 1711-1718.
 
 
