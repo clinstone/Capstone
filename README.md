@@ -33,6 +33,10 @@ The Oxford Acute Severity of Illness Score (OASIS) is a parsimonious severity sc
 
 [Source](http://alistairewj.github.io/project/oasis/)
 
+Pre-ICU LOS = Length of Hospital Stay prior to admission to ICU
+GCS = Glasgow Coma Scale
+MAP = Mean Arterial Pressure
+
 References:
 Johnson, Alistair EW, Andrew A. Kramer, and Gari D. Clifford. "A new severity of illness scale using a subset of acute physiology and chronic health evaluation data elements shows comparable predictive accuracy*." Critical care medicine 41, no. 7 (2013): 1711-1718.
 
