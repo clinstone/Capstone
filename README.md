@@ -1,4 +1,5 @@
-# Welcome to my Capstone Project! 
+# Prediction of mortality in the Intensive Care Unit (ICU)
+
 
 Please check out a 4 minute video to get a quick overview of my project (clicking link will redirect to video on YouTube). 
 
