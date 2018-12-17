@@ -25,3 +25,10 @@ Past studies have tested the predictive power of individual scoring systems. The
 
 The [MIMIC-III (Medical Information Mart for Intensive Care) Clinical Database](https://mimic.physionet.org/) developed by the MIT Lab for Computational Physiology. It is a large collection of de-identified electronic medical records for over 40,00 patients admitted to the Beth Israel Deaconess Medical Center in Boston, MA, USA between 2001 and 2012. The database consists of 26 comma-separated-value (CSV) files. The total size of the uncompressed files is 47GB. All tables combined there are 534 columns and 728,556,685 rows. I had to complete an online course and submit an official application requesting access to the database. 
 
+## Oxford Acute Severity of Illness Score (OASIS)
+
+The Oxford Acute Severity of Illness Score (OASIS) is a parsimonious severity score developed using a hybrid genetic algorithm and particle swarm optimization approach which allowed direct optimization of a severity score in a clinically relevant form with simultaneous multivariate feature selection (Johnson, 2013). 
+
+[[https://github.com/clinstone/Capstone/blob/master/CAPSTONE%20SCRIPTS/OasisPictures/OasisVariables.png|alt=OASIS-sub-scores]]
+
+
