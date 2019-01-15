@@ -41,7 +41,7 @@ MAP = Mean Arterial Pressure
 
 ## Data Science Technology Stack 
 
-![Data Science Technology Stack](https://github.com/clinstone/Capstone/blob/master/CAPSTONE%20SCRIPTS/OasisPictures/TechStack.png)
+![Data Science Technology Stack](https://raw.githubusercontent.com/clinstone/Capstone/master/CAPSTONE%20SCRIPTS/OasisPictures/Data%20Science%20Tech%20Stack.PNG)
 
 
 
