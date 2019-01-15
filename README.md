@@ -15,7 +15,7 @@ There have been several different scoring systems developed and in use including
   * Simplified Acute Physiology Score (SAPS) 
   * Logistic Organ Dysfunction Score (LODS) 
 
-My capstone evaluated each of these 3 different scoring systems ability to predict patient mortality. I also combined the 3 scoring systems into one 'super scorer' and test it's predicitve ability.
+My capstone evaluated each of these 3 different scoring systems ability to predict patient mortality. I also combined the 3 scoring systems into one 'super scorer' and tested it's predicitve ability.
 
 ## Prior research 
 
@@ -38,6 +38,15 @@ Pre-ICU LOS = Length of Hospital Stay prior to admission to ICU admission
 GCS = Glasgow Coma Scale
 
 MAP = Mean Arterial Pressure
+
+## Data Science Technology Stack 
+
+![Data Science Technology Stack](https://github.com/clinstone/Capstone/blob/master/CAPSTONE%20SCRIPTS/OasisPictures/TechStack.png)
+
+
+
+
+
 
 References:
 Johnson, Alistair EW, Andrew A. Kramer, and Gari D. Clifford. "A new severity of illness scale using a subset of acute physiology and chronic health evaluation data elements shows comparable predictive accuracy*." Critical care medicine 41, no. 7 (2013): 1711-1718.
